@@ -9,15 +9,16 @@ public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nome;
-    private String cpf;
+
+    @Embedded
+    private DadosPessoais dadosPessoais;
+
 
     public Cliente() {
     }
 
     public Cliente(String nome, String cpf) {
-        this.nome = nome;
-        this.cpf = cpf;
+        this.dadosPessoais = new DadosPessoais(nome, cpf);
     }
 
     public Long getId() {
@@ -29,18 +30,11 @@ public class Cliente {
     }
 
     public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
+        return dadosPessoais.getNome();
     }
 
     public String getCpf() {
-        return cpf;
+        return dadosPessoais.getCpf();
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
 }
