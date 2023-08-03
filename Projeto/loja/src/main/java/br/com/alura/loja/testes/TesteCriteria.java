@@ -12,7 +12,7 @@ import java.math.BigDecimal;
 
 public class TesteCriteria {
     public static void main(String[] args) {
-        //popularBancoDados();
+        popularBancoDados();
         EntityManager em = JPAUtil.getEntityManager();
         ProdutoDao produtoDao = new ProdutoDao(em);
         produtoDao.buscarPorParametrosComCriteria("PS5", null, null);
