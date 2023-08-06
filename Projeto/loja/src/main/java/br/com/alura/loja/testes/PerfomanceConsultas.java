@@ -23,7 +23,7 @@ public class PerfomanceConsultas {
     }
 
     private static void popularBancoDeDados() {
-        Categoria celulares = new Categoria("CELULARES", "XPTO");
+        Categoria celulares = new Categoria("CELULARES", "XPTOe");
         Categoria videogames = new Categoria("VIDEOGAMES", "OUTRO");
         Categoria informatica = new Categoria("INFORMATICA", "OUTRO AINDA");
 
