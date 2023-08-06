@@ -10,18 +10,22 @@ import br.com.alura.loja.modelo.*;
 import javax.persistence.EntityManager;
 import java.math.BigDecimal;
 
-public class TesteCriteria {
+public class PerfomanceConsultas {
     public static void main(String[] args) {
-        popularBancoDados();
+        popularBancoDeDados();
         EntityManager em = JPAUtil.getEntityManager();
-        ProdutoDao produtoDao = new ProdutoDao(em);
-        produtoDao.buscarPorParametrosComCriteria("PS5", null, null);
+        PedidoDao pedidoDao = new PedidoDao(em);
+        Pedido pedido = pedidoDao.buscarPedidoComCliente(1l);
+
+        em.close();
+        System.out.println(pedido.getCliente().getNome());
+
     }
 
-    private static void popularBancoDados() {
-        Categoria celulares = new Categoria("CELULARES", "XPTO");
-        Categoria videogames = new Categoria("VIDEOGAMES", "OUTRO");
-        Categoria informatica = new Categoria("INFORMATICA","OUTRO AINDA");
+    private static void popularBancoDeDados() {
+        Categoria celulares = new Categoria("CELULARES");
+        Categoria videogames = new Categoria("VIDEOGAMES");
+        Categoria informatica = new Categoria("INFORMATICA");
 
         Produto celular = new Produto("Xiaomi Redmi", "Muito legal", new BigDecimal("800"), celulares);
         Produto videogame = new Produto("PS5", "Playstation 5", new BigDecimal("8000"), videogames);

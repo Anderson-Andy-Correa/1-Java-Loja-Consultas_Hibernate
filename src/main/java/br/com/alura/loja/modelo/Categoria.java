@@ -6,11 +6,13 @@ import javax.persistence.*;
 @Table(name = "categorias")
 public class Categoria {
 
-    @EmbeddedId
-    private CategoriaId id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String nome;
 
-    public Categoria(String nome, String tipo) {
-        this.id = new CategoriaId(nome, tipo);
+    public Categoria(String nome) {
+        this.nome = nome;
     }
 
     public Categoria() {
@@ -18,11 +20,11 @@ public class Categoria {
     }
 
     public String getNome() {
-        return this.id.getNome();
+        return nome;
     }
 
     public void setNome(String nome) {
-        this.id.setNome(nome);
+        this.nome = nome;
     }
 
 
