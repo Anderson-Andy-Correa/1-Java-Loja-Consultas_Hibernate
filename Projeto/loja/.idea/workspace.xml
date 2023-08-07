@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64b57973-dc3b-4e88-9b1f-459467af4ea2" name="Changes" comment="Criado uma entidade com chave composta">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/loja/modelo/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/loja/modelo/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/loja/testes/CadastroDeProduto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/loja/testes/CadastroDeProduto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/loja/testes/PerfomanceConsultas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/loja/testes/PerfomanceConsultas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/alura/loja/modelo/Categoria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/alura/loja/modelo/Categoria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/alura/loja/modelo/Produto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/alura/loja/modelo/Produto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/alura/loja/testes/CadastroDeProduto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/alura/loja/testes/CadastroDeProduto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/alura/loja/testes/PerfomanceConsultas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/alura/loja/testes/PerfomanceConsultas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/alura/loja/testes/TesteCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/alura/loja/testes/TesteCriteria.class" afterDir="false" />
-    </list>
+    <list default="true" id="64b57973-dc3b-4e88-9b1f-459467af4ea2" name="Changes" comment="Finalizando curso de Hibernate e consultas" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +58,7 @@
       <recent name="br.com.alura.loja.modelo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TesteCriteria">
+  <component name="RunManager" selected="Application.CadastroDePedido">
     <configuration name="CadastroDePedido" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.alura.loja.testes.CadastroDePedido" />
       <module name="loja" />
@@ -123,9 +113,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CadastroDePedido" />
         <item itemvalue="Application.TesteCriteria" />
         <item itemvalue="Application.PerfomanceConsultas" />
-        <item itemvalue="Application.CadastroDePedido" />
         <item itemvalue="Application.CadastroDeProduto" />
       </list>
     </recent_temporary>
@@ -182,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691363214704</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Finalizando curso de Hibernate e consultas">
+      <created>1691364651762</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691364651762</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +217,7 @@
     <MESSAGE value="Criando classes com anotações Embeddable e Embedded" />
     <MESSAGE value="Criando persistência com Herança" />
     <MESSAGE value="Criado uma entidade com chave composta" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criado uma entidade com chave composta" />
+    <MESSAGE value="Finalizando curso de Hibernate e consultas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalizando curso de Hibernate e consultas" />
   </component>
 </project>
